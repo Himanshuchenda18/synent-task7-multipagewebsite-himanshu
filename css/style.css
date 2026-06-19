@@ -292,3 +292,144 @@ font-size:40px
 font-size:30px
 }
 }
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px)
+}
+to{
+opacity:1;
+transform:translateY(0)
+}
+}
+
+@keyframes fadeLeft{
+from{
+opacity:0;
+transform:translateX(-50px)
+}
+to{
+opacity:1;
+transform:translateX(0)
+}
+}
+
+@keyframes fadeRight{
+from{
+opacity:0;
+transform:translateX(50px)
+}
+to{
+opacity:1;
+transform:translateX(0)
+}
+}
+
+.hero-content{
+animation:fadeLeft 1s ease forwards
+}
+
+.hero-image{
+animation:fadeRight 1s ease forwards
+}
+
+.about-content{
+animation:fadeLeft 1s ease forwards
+}
+
+.about-image{
+animation:fadeRight 1s ease forwards
+}
+
+.section-title{
+animation:fadeUp 1s ease forwards
+}
+
+.feature-card,.service-card,.team-card,.why-card,.info-card{
+animation:fadeUp .8s ease forwards;
+opacity:0
+}
+
+.feature-card:nth-child(1),
+.service-card:nth-child(1),
+.team-card:nth-child(1),
+.why-card:nth-child(1){
+animation-delay:.2s
+}
+
+.feature-card:nth-child(2),
+.service-card:nth-child(2),
+.team-card:nth-child(2),
+.why-card:nth-child(2){
+animation-delay:.4s
+}
+
+.feature-card:nth-child(3),
+.service-card:nth-child(3),
+.team-card:nth-child(3),
+.why-card:nth-child(3){
+animation-delay:.6s
+}
+
+.service-card:nth-child(4){
+animation-delay:.8s
+}
+
+.feature-card:hover,
+.service-card:hover,
+.team-card:hover,
+.why-card:hover{
+transform:translateY(-15px) scale(1.03);
+box-shadow:0 25px 50px rgba(79,172,254,.25)
+}
+
+.primary-btn,
+.secondary-btn,
+.contact-form button{
+position:relative;
+overflow:hidden
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.contact-form button:hover{
+transform:scale(1.08);
+box-shadow:0 10px 30px rgba(79,172,254,.4)
+}
+
+.hero-image img,
+.about-image img{
+animation:float 4s ease-in-out infinite
+}
+
+@keyframes float{
+0%{
+transform:translateY(0)
+}
+50%{
+transform:translateY(-15px)
+}
+100%{
+transform:translateY(0)
+}
+}
+
+.nav-links a{
+position:relative
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-8px;
+width:0;
+height:2px;
+background:#4facfe;
+transition:.3s
+}
+
+.nav-links a:hover::after{
+width:100%
+}
