@@ -242,11 +242,25 @@ margin-bottom:10px
 color:#b8c1d9
 }
 @media(max-width:768px){
+
 .navbar{
 width:90%
 }
+
 .nav-links{
 display:none
+}
+
+.nav-links.active{
+display:flex;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#070b1a;
+flex-direction:column;
+align-items:center;
+padding:30px 0;
 }
 .menu-icon{
 display:block
