@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Readiness Assessment | HiorbAI</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header id="navbarContainer"></header>
+
+<main>
+
+<section class="page-banner">
+
+<div class="container">
+
+<h1>AI Readiness Assessment</h1>
+
+<p>Answer a few questions to evaluate how prepared you are for adopting AI solutions.</p>
+
+</div>
+
+</section>
+
+<section class="assessment-section section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>AI Readiness Assessment</h2>
+
+<p>Complete the assessment below to receive your AI readiness score and recommendations.</p>
+
+</div>
+
+<form id="assessmentForm">
+
+<div class="assessment-container">
+
+<div id="questionContainer">
+
+</div>
+
+<div class="assessment-actions">
+
+<button type="submit" class="btn btn-primary">
+
+Submit Assessment
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+<section id="assessmentResult" class="assessment-result">
+
+<div class="result-header">
+
+<h2>Your AI Readiness Score</h2>
+
+<p>Complete the assessment to view your personalized results.</p>
+
+</div>
+
+<div class="result-grid">
+
+<div class="result-box">
+
+<h3>Score</h3>
+
+<h1 id="readinessScore">--%</h1>
+
+</div>
+
+<div class="result-box">
+
+<h3>Readiness Level</h3>
+
+<span id="readinessLevel" class="level-badge">--</span>
+
+</div>
+
+</div>
+
+<div class="recommendation-box">
+
+<h3>Recommendation</h3>
+
+<p id="recommendationText">
+
+Submit the assessment to receive recommendations.
+
+</p>
+
+</div>
+
+<div class="chart-wrapper">
+
+<h3>AI Readiness Analytics</h3>
+
+<p>Your readiness score is visualized below.</p>
+
+<div class="chart-container">
+
+<canvas id="assessmentChart"></canvas>
+
+</div>
+
+</div>
+</section>
+
+</div>
+
+</section>
+
+</main>
+
+<footer id="footerContainer"></footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

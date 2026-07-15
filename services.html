@@ -2,95 +2,217 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HiorbAI | Our Services</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Services | HiorbAI</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-<header>
-<nav class="navbar">
-<div class="logo">HiorbAI</div>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-<div class="menu-icon">☰</div>
-</nav>
-</header>
-<section class="services-hero">
-<div class="services-content">
+
+<header id="navbarContainer"></header>
+
+<main>
+
+<section class="page-banner">
+<div class="container">
 <h1>Our Services</h1>
-<p>We deliver innovative AI-powered solutions and advanced technology services that help businesses grow in the digital era.</p>
+<p>Discover AI-inspired solutions designed to help businesses improve productivity, automate workflows, and make data-driven decisions.</p>
 </div>
 </section>
-<section class="services-section">
+
+<section class="service-controls section">
+
+<div class="container">
+
 <div class="section-title">
-<h2>What We Offer</h2>
-<p>Combining artificial intelligence, software engineering, and modern technology.</p>
-</div>
-<div class="services-container">
-<div class="service-card">
 
-<img src="images/ai.png" alt="AI Solutions">
+<h2>Explore Our Services</h2>
 
-<h3>
-AI Solutions
-</h3>
-
-<p>
-Building intelligent applications using machine learning technologies.
-</p>
+<p>Search and browse the AI solutions offered by HiorbAI.</p>
 
 </div>
-<div class="service-card">
 
-<img src="images/web.png" alt="Web Development">
+<div class="controls">
 
-<h3>
-Web Development
-</h3>
+<div class="search-box">
 
-<p>
-Creating responsive and modern websites.
-</p>
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input type="text" id="serviceSearch" placeholder="Search services...">
 
 </div>
-<div class="service-card">
 
-<img src="images/data-analytics.png" 
-alt="Data Analytics">
+<select id="serviceFilter">
 
-<h3>Data Analytics</h3>
+<option value="all">All Categories</option>
 
-<p>
-Helping businesses understand data and
-make better decisions using advanced analytics.
-</p>
+<option value="automation">Automation</option>
 
-</div>
-<div class="service-card">
+<option value="analytics">Analytics</option>
 
-<img src="images/cloud-solutions.png" 
-alt="Cloud Solutions">
+<option value="development">Development</option>
 
-<h3>Cloud Solutions</h3>
+<option value="consulting">Consulting</option>
 
-<p>
-Providing secure and scalable cloud
-infrastructure solutions for businesses.
-</p>
+</select>
 
 </div>
+
 </div>
+
 </section>
-<footer>
-<div class="footer-content">
-<h3>HiorbAI</h3>
-<p>© 2026 HiorbAI. All Rights Reserved.</p>
+
+<section class="services-list section">
+
+<div class="container">
+
+<div class="services-grid">
+
+<div class="service-card" data-category="consulting">
+
+<span class="service-badge">Consulting</span>
+
+<div class="service-icon">
+<i class="fa-solid fa-lightbulb"></i>
 </div>
-</footer>
+
+<h3>AI Consulting</h3>
+
+<p>Identify opportunities to integrate Artificial Intelligence into business workflows through strategic planning and practical solution recommendations.</p>
+
+<a href="#" class="service-btn" data-service="consulting">View Details</a>
+
+</div>
+
+<div class="service-card" data-category="automation">
+
+<span class="service-badge">Automation</span>
+
+<div class="service-icon">
+<i class="fa-solid fa-robot"></i>
+</div>
+
+<h3>Workflow Automation</h3>
+
+<p>Automate repetitive business processes with intelligent solutions that improve productivity, reduce manual work, and increase operational efficiency.</p>
+
+<a href="#" class="service-btn" data-service="automation">View Details</a>
+
+</div>
+
+<div class="service-card" data-category="analytics">
+
+<span class="service-badge">Analytics</span>
+
+<div class="service-icon">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+
+<h3>Predictive Analytics</h3>
+
+<p>Transform business data into actionable insights through visual dashboards, trend analysis, and predictive reporting techniques.</p>
+
+<a href="#" class="service-btn" data-service="analytics">View Details</a>
+
+</div>
+
+<div class="service-card" data-category="development">
+
+<span class="service-badge">Development</span>
+
+<div class="service-icon">
+<i class="fa-solid fa-comments"></i>
+</div>
+
+<h3>AI Chatbots</h3>
+
+<p>Create intelligent chatbot interfaces that improve customer interaction and provide instant responses for common user requests.</p>
+
+<a href="#" class="service-btn" data-service="chatbot">View Details</a>
+
+</div>
+
+<div class="service-card" data-category="development">
+
+<span class="service-badge">Development</span>
+
+<div class="service-icon">
+<i class="fa-solid fa-camera"></i>
+</div>
+
+<h3>Computer Vision</h3>
+
+<p>Develop image-based AI solutions capable of recognizing patterns, detecting objects, and assisting visual automation processes.</p>
+
+<a href="#" class="service-btn" data-service="vision">View Details</a>
+
+</div>
+
+<div class="service-card" data-category="development">
+
+<span class="service-badge">Development</span>
+
+<div class="service-icon">
+<i class="fa-solid fa-cloud"></i>
+</div>
+
+<h3>Cloud AI Solutions</h3>
+
+<p>Build scalable AI-powered applications using modern cloud technologies designed for performance, flexibility, and growth.</p>
+
+<a href="#" class="service-btn" data-service="cloud">View Details</a>
+
+</div>
+
+</div>
+
+</div>
+<div id="noServicesMessage" class="no-services">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<h3>No Services Found</h3>
+
+<p>Try another keyword or choose a different category.</p>
+
+</div>
+
+</section>
+<div class="modal-overlay" id="serviceModal">
+
+<div class="service-modal">
+
+<button class="modal-close" id="closeModal">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+<div class="modal-icon" id="modalIcon">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+</div>
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalDescription"></p>
+
+<h3>Key Features</h3>
+
+<ul id="modalFeatures">
+
+</ul>
+
+</div>
+
+</div>
+
+</main>
+
+<footer id="footerContainer"></footer>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>

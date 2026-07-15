@@ -1,216 +1,348 @@
-# HiorbAI Website
+# HiorbAI
 
-A modern and responsive multi-page website designed for an AI-based technology company. HiorbAI focuses on delivering intelligent solutions through artificial intelligence, software development, data analytics, and cloud technologies.
+A modern frontend-only AI company website developed using HTML, CSS, JavaScript, Chart.js, and LocalStorage.
 
-This project was developed as a frontend web development task with a focus on creating a professional UI, responsive layouts, smooth animations, and interactive user experiences.
+This project was created as part of the Synent Technology Web Development & Design Internship.
 
 ---
 
-## About The Project
+## Project Overview
 
-HiorbAI is a professional company website that represents a modern AI technology startup.
+HiorbAI is a responsive multi-page AI company website that demonstrates modern frontend web development concepts without using any backend technologies or frameworks.
 
-The website includes multiple pages that showcase the company's introduction, services, team information, and contact details. The main goal of this project was to build a clean, attractive, and responsive website structure similar to a real-world business website.
+The project focuses on clean UI design, responsive layouts, reusable components, interactive JavaScript features, browser storage using LocalStorage, and data visualization using Chart.js.
 
-The project focuses on:
+---
 
-- Modern frontend design
-- Responsive layouts
-- User-friendly navigation
-- Interactive components
-- Clean and maintainable code
+## Project Objectives
+
+- Build a responsive multi-page website
+- Create reusable UI components
+- Implement modern frontend features
+- Store user data using LocalStorage
+- Visualize data using Chart.js
+- Demonstrate clean UI/UX principles
+- Maintain reusable and organized code structure
 
 ---
 
 ## Features
 
-### Responsive Design
+### General Features
 
-- Fully responsive layout for desktop, tablet, and mobile devices
-- Optimized sections that adjust according to screen size
+- Responsive multi-page website
+- Modern SaaS-inspired user interface
+- Sticky navigation bar
+- Dark and Light theme with LocalStorage
+- Scroll progress indicator
+- Loading screen
+- Scroll-to-top button
+- Professional footer
+- Reusable navbar and footer components
 
-### Modern User Interface
+### Home Page
 
-- Dark AI-inspired theme
-- Gradient-based design elements
-- Professional cards and layouts
-- Clean typography and spacing
+- Hero section
+- AI company introduction
+- Services overview
+- Call-to-action section
+- Animated statistics
+- Professional responsive layout
 
-### Multi-Page Website
+### About Page
 
-The website contains:
+- Company overview
+- Mission and vision
+- Core values
+- Technology stack
+- Why choose HiorbAI
 
-- Home Page
-- About Page
-- Services Page
-- Contact Page
+### Services Page
 
-### Animations and Effects
+- AI service cards
+- Search functionality
+- Category filtering
+- Responsive service grid
 
-- Smooth section animations
-- Card hover effects
-- Button hover animations
-- Floating image effects
-- Navigation hover effects
+### AI Project Cost Calculator
 
-### Mobile Navigation
+- Project estimation form
+- Dynamic cost calculation
+- Timeline estimation
+- Complexity analysis
+- Recommended team size
+- Project summary
+- Calculator history using LocalStorage
 
-- Mobile-friendly hamburger menu
-- Easy navigation experience on smaller screens
+### AI Readiness Assessment
 
-### Contact Form Validation
+- 15 assessment questions
+- Automatic score calculation
+- Readiness level analysis
+- Improvement recommendations
+- Chart.js visualization
+- Assessment history using LocalStorage
 
-The contact page includes:
+### Analytics Dashboard
 
-- Name validation
-- Email format checking
-- Message validation
-- Success confirmation message
+- Project statistics
+- Assessment analytics
+- Calculator statistics
+- Interactive charts
+- LocalStorage data visualization
+
+### Contact Page
+
+- Inquiry form
+- LocalStorage data storage
+- Responsive contact layout
+- Frontend demonstration notice
 
 ---
 
-## Technologies Used
+## Technology Stack
 
 ### Frontend
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
 
-### Tools
+### Libraries
+
+- Chart.js
+- Font Awesome
+- Google Fonts
+
+### Browser Storage
+
+- LocalStorage
+
+### Development Tools
 
 - Visual Studio Code
 - Git
 - GitHub
-- Live Server Extension
 
 ---
 
-## Website Pages
-
-## Home Page
-
-The home page introduces HiorbAI with:
-
-- Hero section
-- Company introduction
-- Core capabilities
-- Why choose us section
-
-
-## About Page
-
-The about page contains:
-
-- Information about HiorbAI
-- Mission statement
-- Vision statement
-- Team section
-
-
-## Services Page
-
-The services page highlights the main technology services:
-
-- Artificial Intelligence Solutions
-- Web Development
-- Data Analytics
-- Cloud Solutions
-
-
-## Contact Page
-
-The contact page provides:
-
-- Contact form
-- Email details
-- Phone information
-- User input validation
-
----
-
-## Project Structure
+## Folder Structure
 
 ```
-synent-task7-multipagewebsite-himanshu
-
+HiorbAI
 │
-├── index.html
-├── about.html
-├── services.html
-├── contact.html
+├── components
+│   ├── navbar.html
+│   └── footer.html
 │
 ├── css
 │   └── style.css
 │
-├── js
-│   └── script.js
+├── data
+│   └── services.json
 │
 ├── images
 │
-├── README.md
+├── js
+│   └── script.js
 │
-└── .gitignore
+├── reports
+│   └── Project_Report.md
+│
+├── screenshots
+│
+├── about.html
+├── assessment.html
+├── calculator.html
+├── contact.html
+├── dashboard.html
+├── index.html
+├── services.html
+├── README.md
+└── favicon.ico
 ```
 
 ---
 
-## How To Run The Project
+## LocalStorage Usage
 
-Follow these steps to run the project locally:
+The project uses LocalStorage to provide a frontend-only interactive experience.
 
-1. Clone this repository or download the project files.
+Stored data includes:
+
+- Theme preference
+- Calculator history
+- Assessment results
+- Dashboard statistics
+- Contact inquiries
+- User preferences
+
+All information remains inside the user's browser and is never transmitted to a server.
+
+---
+
+## Third-Party Resources
+
+- Chart.js for charts and analytics
+- Font Awesome for icons
+- Google Fonts (Inter)
+
+---
+
+## Installation
+
+1. Download or clone the repository.
 
 2. Open the project folder in Visual Studio Code.
 
-3. Install the Live Server extension in VS Code.
+3. Install the Live Server extension.
 
-4. Open `index.html`.
+4. Right-click on `index.html`.
 
-5. Right-click on the file and select:
+5. Select **Open with Live Server**.
 
-```
-Open with Live Server
-```
-
-6. The website will open in your browser.
+6. Navigate through the website using the navigation bar.
 
 ---
 
-## Future Improvements
+## Project Workflow
 
-Some possible improvements for future versions:
+The project follows a modular frontend architecture.
 
-- Add backend functionality
-- Connect contact form with a database
-- Add real email submission system
-- Integrate AI chatbot features
-- Deploy the website on cloud platforms
-- Improve SEO optimization
+1. The user visits the Home page.
+2. Navigation is loaded using reusable HTML components.
+3. JavaScript initializes the common UI features.
+4. User interactions are handled using JavaScript.
+5. Data is stored in LocalStorage.
+6. Chart.js visualizes assessment and dashboard data.
+7. Theme preference is restored automatically on every visit.
+
+---
+
+## Highlights
+
+- Frontend-only implementation
+- Responsive design
+- Reusable components
+- Interactive UI
+- LocalStorage integration
+- Chart.js analytics
+- Modern SaaS-inspired interface
+- Clean project structure
+- GitHub-ready
+- Internship-ready
+
+---
+
+## Future Enhancements
+
+This project can be extended by adding:
+
+- User authentication
+- Backend integration
+- Database connectivity
+- AI chatbot
+- Email service integration
+- Real-time analytics
+- Admin login
+- Payment gateway
+- Project tracking system
+- Cloud deployment
+
+---
+
+## Learning Outcomes
+
+Through this project, the following concepts were implemented and practiced:
+
+- Responsive web design
+- Component-based frontend development
+- DOM manipulation
+- Event handling
+- LocalStorage
+- Dynamic rendering
+- Form validation
+- Chart.js integration
+- UI/UX design
+- Modern JavaScript
+- Git and GitHub workflow
 
 ---
 
 ## Author
 
+**Project Name**
+
+HiorbAI
+
+**Developed By**
+
 Himanshu Chenda
 
----
+**Internship**
 
-## Project Status
-
-Completed as part of internship task submission.
-
-The project includes:
-
-- Responsive design
-- Modern UI
-- JavaScript functionality
-- Form validation
-- Animations
-- Professional documentation
+Synent Technology Web Development & Design Internship
 
 ---
 
 ## License
 
-This project is created for learning and internship submission purposes.
+This project was developed for educational and internship purposes.
+
+---
+
+## Acknowledgements
+
+Special thanks to Synent Technology for providing the internship opportunity and project guidelines that inspired the development of this frontend web application.
+
+---
+
+## Project Status
+
+**Status:** Completed
+
+This project demonstrates a modern frontend AI company website built using HTML, CSS, JavaScript, Chart.js, and LocalStorage. It has been developed as part of the Synent Technology Web Development & Design Internship and showcases responsive design, reusable components, interactive features.
+
+---
+
+# Project Screenshots
+
+## Home
+
+![Home](screenshots/home.png)
+
+---
+
+## About
+
+![About](screenshots/about.png)
+
+---
+
+## Services
+
+![Services](screenshots/services.png)
+
+---
+
+## AI Project Cost Calculator
+
+![Calculator](screenshots/calculator.png)
+
+---
+
+## AI Readiness Assessment
+
+![Assessment](screenshots/assessment.png)
+
+---
+
+## Analytics Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## Contact
+
+![Contact](screenshots/contact.png)
